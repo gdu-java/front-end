@@ -53,7 +53,7 @@
     </p>
 
     <!--
-        3. 형식을 갖춘 문다(pre-formmatted paragraph)
+        3. 형식을 갖춘 문단(pre-formmatted paragraph)
           1) 블록 레벨
           2) 입력된 공백 문자(스페이스),엔터가 그래로 나타남
           3) <pre></pre>
@@ -66,5 +66,30 @@
 
     </pre>
 
+
+    <!--
+        4. 줄 바꿈(breaking line) 태그
+            1) 종료 태그 없이 사용
+            2) <br> 또는 <br/>
+
+    -->
+
+    <!--
+        5. 엔티티 코드(entity code)
+            1) HTML 구성 요소와 충돌이 발생하는 특수문자를 입력하는 방법
+            2) &로 시작하고 ;으로 끝냄.
+    -->
+
+    <pre>
+        작다(less than)                     &lt;
+        크다(greater than)                  &gt;
+        작거나 같다(less than equal)        &le;
+        크거나 같다(greater than equal)     &ge;
+        엠퍼센트                            &amp;
+        공백(space)                        &nbsp;
+        Hello       World
+    </pre>
+    <p>Hello&nbsp;&nbsp;&nbsp;&nbsp;World</p>
 </body>
 </html>
+
