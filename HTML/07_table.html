@@ -62,5 +62,49 @@
 
     </table>
 
+    <!-- 
+        셀 병합
+        1. <td> 태그의 속성으로 병합한다.
+        2. 병합 속성
+            1) colspan : 열병합, 좌우 셀을 하나로 합침.
+            2) rowspan : 행병합, 상하 셀을 하나로 합침.
+
+    -->
+    <!-- 열 병합 -->
+
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>1열</td>
+                <td>2열</td>
+                <td>3열</td>
+            </tr>
+            <tr>
+                <td>1열</td>
+                <td colspan="2">2~3열</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <br><br><br>
+    <!-- 행 병합-->
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>1열</td>
+                <td rowspan="2">2열</td>
+                <td>3열</td>
+            </tr>
+            <tr>
+                <td>1열</td>
+                <td rowspan="2">3열</td>
+            </tr>        
+            <tr>
+                <td>1열</td>
+                <td>2열</td>
+            </tr>        
+        </tbody>
+    </table>
+
 </body>
 </html>
