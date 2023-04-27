@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        그림(이미지) 태그
+        1. 인라인 레벨
+        2. <img> 또는 <img/>
+        3. 주요 속성
+            1) alt : 이미지를 대신해서 나타낼 텍스트(이미지가 없는 경우 대비)
+            2) src : 이미지 경로를 작성
+                    - 절대경로 : c:/git-data/java-workspace/sample.jpg
+                    - 상대경로 : ../../sample.jpg
+                                상위 디렉토리 : ..
+                                현재 디렉토리 : .
+                    - 웹 경로(url) : 사용 가능
+            3) width  : 이미지의 너비를 지정
+            4) height : 이미지의 높이를 지정
+    -->
+
+    <p>
+
+        <!-- 절대 경로로  이미지 지정-->
+        <img src="D:\images\sample1.jpg" alt="샘플이미지" width="400" height="300">
+
+    </p>
+
+    <p>
+
+        <!-- 상대 경로로 이미지 지정-->
+
+        <!-- 
+            현재 위치 : D:\git-data\front-end\html\05_image.html
+            이미지의 위치 :  D:\images\sample1.jpg
+            이미지의 상대경로 : ../../../images/sample1.jpg
+         -->
+         <img src="../../../images/sample2.jpg" alt="샘플이미지" width="400" height="300">
+ 
+    </p>
+
+
+    <p>
+
+        <!-- 웹 경로 -->
+        <img src="https://ssl.pstatic.net/melona/libs/1436/1436270/52ed3345c2bca45afffe_20230220094819224.jpg">
+    </p>
+</body>
+</html>

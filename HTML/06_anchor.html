@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Anchor 태그 
+        
+        1. 인라인 레벨
+        2. 링크를 만드는 태그
+        3. <a></a>
+        4. 주요 속성
+            1) href : 이동할 경로를 작성한다.
+            2) title : 풍선 도움말(마우스를 가져다 대면 나타나는 메시지 창)
+            3) target : 어떤 창으로 이동하는지 지정
+                        - _self  : 현재창으로 이동
+                        - _blank : 새로운 창으로 이동 
+    -->
+
+    <!-- 1. 이동이 없는 링크 -->
+    <p>
+        <a href="#">비어있는 링크</a>
+        <br>
+    </p>
+
+    <!-- 2. 웹 경로 링크 -->
+    <p>
+        <a href="https://www.google.com" target="_self">구글</a>
+        <br>
+        <a href="https://www.naver.com" target="_blank">네이버</a>
+    </p>
+
+    <!-- 3. 이미지 링크 -->
+    <p>
+        <a href="https://www.naver.com"><img src="../../../images/sample2.jpg" alt="샘플이미지" width="400" height="300"></a>
+
+    </p>
+
+    <!--4. 다른 파일 링크 -->
+    <p>
+        <ul>
+            <li><a href="01_HTML개요.html">HTML개요</a></li>
+            <li><a href="02_basic.html">HTML기본</a></li>
+            <li><a href="03_list.html">목록태그</a></li>
+        </ul>
+    </p>
+</body>
+</html>
