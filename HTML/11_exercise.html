@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>연습문제-4</h1>
+    <form action="" method="post">
+        <p>
+            <a href="https://www.naver.com">
+                <img src="../images/naver_logo.png" alt="">
+            </a>
+        </p>
+        <br>
+        <b>아이디</b>
+        <br>
+        <input type="text" name="id">@naver.com
+        <br><br>
+        <label for="pw"><strong>비밀번호</strong></label>
+        <br>
+        <input type="password" name="password" id="pw">
+        <br><br>
+        <label for="pw2"><strong>비밀번호 재확인</strong></label>
+        <br>
+        <input type="password" id="pw2">
+        <br><br>
+        <label for="user_name"><strong>이름</strong></label>
+        <br>
+        <input type="text" name="user_name" id="user_name">
+        <br><br>
+        <label for="year"><strong>생년월일</strong></label>
+        <br>
+        <input type="text" name="year" id="year" placeholder="년(4자)" maxlength="4" size="4">
+        <select name="month">
+            <option value="">월</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10"10></option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <input type="text" name="day" placeholder="일" maxlength="2" size="2">
+        <br><br>
+        <label for="gender"><b>성별</b></label>
+        <br>
+        <select name="gender" id="gender">
+            <option value="">성별</option>
+            <option value="male">남자</option>
+            <option value="female">여자</option>
+        </select>
+        <br><br>
+        <label for="email"><strong>본인 확인 이메일</strong></label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="선택입력">
+        <br><br>
+        <label for="mobile"><strong>휴대전화</strong></label>
+        <br>
+        <select name="country">
+            <option value="+233">가나 +233</option>
+            <option value="+82" selected>대한민국 +82</option>
+            <option value="+832">홍콩 +832</option>
+        </select>
+        <br>
+        <input type="text" name="tel" id="mobile" placeholder="전화번호입력" size="10">
+        <input type="button" value="인증번호찾기">
+        <br>
+        <input type="text" placeholder="인증번호 입력하세요" disabled>
+        <br><br>
+        <button>가입하기</button>
+    </form>
+</body>
+</html>
