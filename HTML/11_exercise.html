@@ -15,9 +15,9 @@
             </a>
         </p>
         <br>
-        <b>아이디</b>
+        <label for="id"><b>아이디</b></label>
         <br>
-        <input type="text" name="id">@naver.com
+        <input type="text" name="id" id="id">@naver.com
         <br><br>
         <label for="pw"><strong>비밀번호</strong></label>
         <br>
@@ -25,7 +25,7 @@
         <br><br>
         <label for="pw2"><strong>비밀번호 재확인</strong></label>
         <br>
-        <input type="password" id="pw2">
+        <input type="password" id="pw2">  <!-- 패스워드 재확인값은 서버로 전달할 필요가 없으므로 name속성을 사용하지 않음.-->
         <br><br>
         <label for="user_name"><strong>이름</strong></label>
         <br>
@@ -45,7 +45,7 @@
             <option value="7">7</option>
             <option value="8">8</option>
             <option value="9">9</option>
-            <option value="10"10></option>
+            <option value="10">10</option>
             <option value="11">11</option>
             <option value="12">12</option>
         </select>
@@ -59,7 +59,7 @@
             <option value="female">여자</option>
         </select>
         <br><br>
-        <label for="email"><strong>본인 확인 이메일</strong></label>
+        <label for="email"><strong>본인 확인 이메일(선택)</strong></label>
         <br>
         <input type="email" name="email" id="email" placeholder="선택입력">
         <br><br>
@@ -71,7 +71,7 @@
             <option value="+832">홍콩 +832</option>
         </select>
         <br>
-        <input type="text" name="tel" id="mobile" placeholder="전화번호입력" size="10">
+        <input type="text" name="tel" id="mobile" placeholder="전화번호입력('-' 제외)" size="15">
         <input type="button" value="인증번호찾기">
         <br>
         <input type="text" placeholder="인증번호 입력하세요" disabled>
