@@ -156,7 +156,42 @@
                     >> 전송할 데이터가 본문에 포함되므로 노출되지 않음.
                     >> 처리가 느리지만 보안에 우수.
         -->
+    </p>
+        <!--
+            10. 버튼
+                1) <button type="submit">텍스트</button> :서브밋, type="submit" 기본값으로 생략가능.
+                2) <button type="submit" value="텍스트"> : 서브밋
+                3) <button type="reset" value="텍스트">  : 입력값 초기화
+                4) <button type="button" value="텍스트"> : 아무 동작을 하지 않는 버튼. 직접 동작을 지정해야함.
 
+        -->
+    <p>
+        <form action="02_basic.html">
+            <label for="name">
+                이름<input type="text" id="name">
+            </label>
+            <label for="age">
+                나이<input type="number" id="age">
+            </label>
+            <br>
+            <input type="submit" value="전송">  <!--<button>전송</button> 와 같은 동작-->
+            <input type="reset" value="재입력">
+            <input type="button" value="일반버튼" onclick="alert('테스트')">
+        </form>
+
+    </p>    
+
+    <p>
+        <!-- 11. 입력 요소 그룹 : fieldset-->
+        <fieldset>
+            <legend>성별</legend>
+            <label for="male">
+                <input type="radio" name="gender" value="male" id="male">남
+            </label>
+            <label for="female">
+                <input type="radio" name="gender" value="female" id="female">여
+            </label>
+        </fieldset>
     </p>
 </body>
 </html>
